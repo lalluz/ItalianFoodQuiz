@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         boolean answerN4Q3 = checkBoxN4Q3.isChecked();
 
         // Check if all answers are true and add 1 point to score.
-        if (answerN1Q3 & answerN2Q3 & answerN3Q3 & answerN4Q3) {
+        if (answerN1Q3 && answerN2Q3 && answerN3Q3 && answerN4Q3) {
             score += 1;
         }
 
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         boolean answerN4Q7 = checkBoxN4Q7.isChecked();
 
         // Check if Q1 and Q4 are true and add 1 point to score.
-        if ((answerN1Q7 & answerN4Q7) & (!answerN2Q7 & !answerN3Q7)) {
+        if ((answerN1Q7 && answerN4Q7) && (!answerN2Q7 && !answerN3Q7)) {
             score += 1;
         }
 

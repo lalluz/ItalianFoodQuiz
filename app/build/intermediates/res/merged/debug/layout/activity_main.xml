@@ -384,12 +384,12 @@
             </LinearLayout> <!-- end box 10 -->
 
         </LinearLayout> <!-- end main vertical layout -->
-
+        <!-- Submit button -->
         <Button
             android:id="@+id/submit_button"
             style="@style/submit_button"
             android:onClick="displayScore" />
-
+        <!-- Reset button -->
         <Button
             android:id="@+id/retake_button"
             style="@style/retake_button"
