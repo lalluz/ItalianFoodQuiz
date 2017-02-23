@@ -1,0 +1,204 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- ScrollView  -->
+    <style name="scroll_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/mainBg</item>
+    </style>
+    <!-- Main RelativeLayout  -->
+    <style name="main_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- Spaghetti Image -->
+    <style name="spaghetti_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:src">@drawable/spaghetti</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Header -->
+    <style name="header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_below">@id/spaghetti_image</item>
+        <item name="android:background">@color/headerBg</item>
+    </style>
+    <!-- Presentation  -->
+    <style name="presentation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="intro_2" parent="presentation">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- Layout of the box with question and answer  -->
+    <style name="box_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- Layout of the upper box with number and question -->
+    <style name="layout_number_question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/questionBg</item>
+    </style>
+    <!-- Box with the number -->
+    <style name="number_box">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/mainBg</item>
+    </style>
+    <!-- Box with the question -->
+    <style name="question_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!-- Answer boxes -->
+    <style name="answer_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:background">@color/answerBg</item>
+    </style>
+    <!-- Answer 1 Layout -->
+    <style name="radio_group_horizontal" parent="answer_box">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Answer 1 RadioButtons -->
+    <style name="answer_1_radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Answer 2 and 5 EditText -->
+    <style name="answer_edit_text" parent="answer_box">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <!-- Answer 3 and 7 Layout -->
+    <style name="answer_3and7" parent="answer_box">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <!-- Answer 3 and 7 CheckBoxes -->
+    <style name="answer_3and7_checkboxes">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <!-- Answer 4 and 6 and 8 RadioButtons -->
+    <style name="answer_4and6and8_radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- ImageViews -->
+    <style name="image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Answer 5 ImageView -->
+    <style name="sicilan_cannoli" parent="image">
+        <item name="android:src">@drawable/cannoli</item>
+    </style>
+    <!-- Answer 8 ImageView -->
+    <style name="pandoro" parent="image">
+        <item name="android:src">@drawable/pandoro</item>
+    </style>
+    <!-- Answer 9 Layout -->
+    <style name="radio_group_vertical" parent="answer_box">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Answer 9 RadioButtons -->
+    <style name="answer_9_radio_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- Answer 10 ImageView -->
+    <style name="orecchiette" parent="image">
+        <item name="android:src">@drawable/orecchiette</item>
+    </style>
+    <!-- Submit Button-->
+    <style name="submit_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/main_vertical_layout</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:text">@string/submit_button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/mainBg</item>
+    </style>
+    <!-- Footer -->
+    <style name="footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/submit_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/headerBg</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- OpenBrowser Button-->
+    <style name="open_browser_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:text">@string/open_browser_button</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+</resources>

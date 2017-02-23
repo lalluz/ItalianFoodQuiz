@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Italian Food Quiz</string>
+    <!-- Presentation -->
+    <string name="intro_1">How much do you really know about authentic Italian Food?</string>
+    <string name="intro_2">Find it out and enjoy this Quiz!</string>
+    <!-- True and False -->
+    <string name="true_value">True</string>
+    <string name="false_value">False</string>
+    <!-- Numbers for boxes-->
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="four" translatable="false">4</string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="seven" translatable="false">7</string>
+    <string name="eight" translatable="false">8</string>
+    <string name="nine" translatable="false">9</string>
+    <string name="ten" translatable="false">10</string>
+    <!-- Questions -->
+    <string name="question_1">Which of these ingredients is not in Pasta Carbonara?</string>
+    <string name="question_2">What is the Italian word for the main ingredient of Pesto Genovese?</string>
+    <string name="question_3">Which ingredients an Italian will never put on a Pizza?</string>
+    <string name="question_4">In Italy Fettuccine Alfredo doesn\'t exist.</string>
+    <string name="question_5">What is the name of this delicious dessert?</string>
+    <string name="question_6">When Pizza Margherita was created in Naples?</string>
+    <string name="question_7">Which of these famous dishes are from Tuscany?</string>
+    <string name="question_8">What is the name of this wonderful Christmas cake from Verona?</string>
+    <string name="question_9">Which of these lists of ingredients is the right one for Pasta Amatriciana?</string>
+    <string name="question_10">What is the name of this handmade Pasta from Puglia?</string>
+    <!-- Answers -->
+    <!-- Answer 1 Hint -->
+    <string name="green">It\'s green stuff&#8230;</string>
+    <!-- Answer 5 Hint -->
+    <string name="from_sicily">It\'s from Sicily&#8230;</string>
+    <!-- Answer 10 Hint -->
+    <string name="ears">It\'s like little ears&#8230;</string>
+    <!-- Ingredients and Food names-->
+    <string name="spaghetti" translatable="false">Spaghetti</string>
+    <string name="basil" translatable="false">Basilico</string>
+    <string name="eggs">Eggs</string>
+    <string name="cream">Cream</string>
+    <string name="pepper">Pepper</string>
+    <string name="ketchup" translatable="false">Ketchup</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="chicken">Chicken</string>
+    <string name="cannoli">Sicilian Cannoli</string>
+    <string name="bolognese_sauce">Bolognese Sauce</string>
+    <string name="ribollita" translatable="false">Ribollita</string>
+    <string name="tortellini" translatable="false">Tortellini</string>
+    <string name="amatriciana" translatable="false">Pasta Amatriciana</string>
+    <string name="panzanella" translatable="false">Panzanella</string>
+    <string name="panettone" translatable="false">Panettone</string>
+    <string name="pandoro" translatable="false">Pandoro</string>
+    <string name="orecchiette" translatable="false">Orecchiette</string>
+    <!-- Years answer 6 -->
+    <string name="_1889" translatable="false">1889</string>
+    <string name="_1921" translatable="false">1921</string>
+    <string name="_1675" translatable="false">1675</string>
+    <string name="_1742" translatable="false">1742</string>
+    <!-- Recipes answer 9 -->
+    <string name="recipe1">Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.</string>
+    <string name="recipe2">Pasta, Olive Oil, Garlic, Fresh Tomatoes, Cheese, Ham, Salt.</string>
+    <string name="recipe3">Pasta, Olive Oil, Tomato Sauce, Bacon, Salt, Pepper, Cheese.</string>
+    <string name="recipe4">Pasta, Butter, Onion, Tomato Sauce, Salt, Pepper, Sausages, Cheese.</string>
+    <!-- Button for results -->
+    <string name="submit_button">And your score is&#8230;</string>
+    <!-- Button openBrowser -->
+    <string name="open_browser_button">Hope you had fun!\nMore about Italian Food?\nCLICK HERE!</string>
+    <!-- TOAST MESSAGES-->
+    <!-- Toast message if score is 0 -->
+    <string name="toast_message_if_0">Nothing?! You got a <xliff:g example="0" id="score">%d</xliff:g>!</string>
+    <!-- Toast message if score is 1 -->
+    <string name="toast_message_if_1">:-( You got only <xliff:g example="1" id="score">%d</xliff:g> answer right!</string>
+    <!-- Toast message if score is 2 or 3 or 4 -->
+    <string name="toast_message_if_2to4">Sorry, you got only <xliff:g example="2-3-4" id="score">%d</xliff:g> answers right!</string>
+    <!-- Toast message if score is 5 or 6 or 7 -->
+    <string name="toast_message_if_5to7">Not bad! You got <xliff:g example="5-6-7" id="score">%d</xliff:g> answers right!</string>
+    <!-- Toast message if score is 8 or 9 -->
+    <string name="toast_message_if_8or9">Good! You got <xliff:g example="8-9" id="score">%d</xliff:g> answers right!</string>
+    <!-- Toast message if score is 10 -->
+    <string name="toast_message_if_10">Great! You got all <xliff:g example="10" id="score">%d</xliff:g> answers right!</string>
+
+</resources>

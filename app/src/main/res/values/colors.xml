@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"    >#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent"     >#FFB300</color>
+
+    <color name="mainBg"          >#FFCA28</color>
+    <color name="headerBg"        >#FFB300</color>
+    <color name="questionBg"      >#B2DFDB</color>
+    <color name="answerBg"        >#E0F2F1</color>
+</resources>
