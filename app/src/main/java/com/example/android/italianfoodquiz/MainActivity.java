@@ -176,7 +176,8 @@ public class MainActivity extends AppCompatActivity {
         // Check if the answer is correct and add 1 point to score.
         // Apply equalsIgnoreCase for better user experience.
         String cannoli = getString(R.string.cannoli);
-        if (answerQ5.equalsIgnoreCase(cannoli)) {
+        String cannoliIt = getString(R.string.cannoli_it);
+        if (answerQ5.equalsIgnoreCase(cannoli) || answerQ5.equalsIgnoreCase(cannoliIt)) {
             score += 1;
         }
 
@@ -264,9 +265,6 @@ public class MainActivity extends AppCompatActivity {
      * resets each answer.
      */
     public void retakeQuiz(View view) {
-        // Go on top of ScrollView for better user experience.
-        ScrollView scroll_view = (ScrollView) findViewById(R.id.activity_main);
-        scroll_view.setScrollY(0);
         // Reset global variable score.
         // Not necessary, but better repeat this action.
         score = 0;
@@ -309,6 +307,13 @@ public class MainActivity extends AppCompatActivity {
         // Reset EditText to hint string value.
         editTextQ10.setText("");
         editTextQ10.setHint(R.string.ears);
+        // Go on top of ScrollView for better user experience.
+        ScrollView scroll_view = (ScrollView) findViewById(R.id.activity_main);
+        scroll_view.setScrollY(0);
+        // Prevent focus on any of EditText.
+        editTextQ2.clearFocus();
+        editTextQ5.clearFocus();
+        editTextQ10.clearFocus();
     }
 
     /**

@@ -47,6 +47,7 @@
     <string name="pineapple">Pineapple</string>
     <string name="chicken">Chicken</string>
     <string name="cannoli">Sicilian Cannoli</string>
+    <string name="cannoli_it" translatable="false">Cannoli Siciliani</string>
     <string name="bolognese_sauce">Bolognese Sauce</string>
     <string name="ribollita" translatable="false">Ribollita</string>
     <string name="tortellini" translatable="false">Tortellini</string>
