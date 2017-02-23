@@ -29,7 +29,7 @@
     <string name="toast_message_if_2to4">Siento decirte que solo has adivinado <xliff:g id="score" example="2-3-4">%d</xliff:g> respuestas!</string>
     <string name="toast_message_if_5to7">Bien! Has adivinado <xliff:g id="score" example="5-6-7">%d</xliff:g> respuestas!</string>
     <string name="toast_message_if_8or9">Muy bien! Has adivinado <xliff:g id="score" example="8-9">%d</xliff:g> respuestas!</string>
-    <string name="open_browser_button">Espero haya sido divertido! Quieres saber mas sobre la Comida Italiana? Haz Click aquí!</string>
+    <string name="open_browser_button">Quieres saber mas sobre la Comida Italiana? Haz Click aquí!</string>
     <string name="question_7">Cuáles de estos famosos platos son de Toscana?</string>
     <string name="ears">Son como pequeñas orejas&#8230;</string>
     <string name="question_8">Cuál es el nombre de esto rico dulce de Navidad de Verona?</string>
@@ -39,5 +39,6 @@
     <string name="recipe2">Pasta, Aceite de Oliva, Ajo, Queso, Jamón, Sal, Tomates Frescos.</string>
     <string name="recipe4">Pasta, Mantequilla, Cebolla, Salsa de Tomate, Sal, Pimenta, Salchicha.</string>
     <string name="recipe3">Pasta, Aceite de Oliva, Salsa de Tomate, Bacon, Sal, Pimenta, Queso.</string>
+    <string name="retake_button">Vuelve a intentarlo</string>
 
 </resources>

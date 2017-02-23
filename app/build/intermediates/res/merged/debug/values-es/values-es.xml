@@ -31,7 +31,7 @@
     <string name="green">Es una cosa verde…</string>
     <string name="intro_1">Cuánto realmente conoces de la verdadera comida Italiana?</string>
     <string name="intro_2">Descúbrelo y disfruta de este Quiz!</string>
-    <string name="open_browser_button">Espero haya sido divertido! Quieres saber mas sobre la Comida Italiana? Haz Click aquí!</string>
+    <string name="open_browser_button">Quieres saber mas sobre la Comida Italiana? Haz Click aquí!</string>
     <string name="pepper">Pimenta</string>
     <string name="pineapple">Ananas</string>
     <string name="question_1">Cuáles de estos ingredientes no está en la Pasta Carbonara?</string>
@@ -48,6 +48,7 @@
     <string name="recipe2">Pasta, Aceite de Oliva, Ajo, Queso, Jamón, Sal, Tomates Frescos.</string>
     <string name="recipe3">Pasta, Aceite de Oliva, Salsa de Tomate, Bacon, Sal, Pimenta, Queso.</string>
     <string name="recipe4">Pasta, Mantequilla, Cebolla, Salsa de Tomate, Sal, Pimenta, Salchicha.</string>
+    <string name="retake_button">Vuelve a intentarlo</string>
     <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
     <string name="submit_button">Y tu resultado es…</string>

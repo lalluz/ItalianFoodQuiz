@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Method called when result button clicked.
+     * Method called when submit button clicked.
      * This method:
      * check each answer,
      * update the global variable score,
-     * display a toast with the final score.
+     * display a toast with the final score,
+     * reset global variable score.
      */
-    public void result(View view) {
+    public void displayScore(View view) {
 
         // QUESTION 1 Q1
         // Retrieve status from the right button.
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         // QUESTION 2 Q2
         // Retrieve the string edited by the user.
-        EditText editTextQ2 = (EditText) findViewById(R.id.answer_2);
+        EditText editTextQ2 = (EditText) findViewById(R.id.edit_text_q2);
         String rightAnswerQ2 = editTextQ2.getText().toString().trim();
         // Log.v("MainActivity", "YOU THINK THE ANSWER IS: " + answer);
 
@@ -186,8 +189,79 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
 
-        // RESET score to retake the quiz without restart the app.
+        // Reset global variable score.
         score = 0;
+    }
+
+    /**
+     * Method called when retake button clicked.
+     * This method:
+     * goes on top of ScrollView,
+     * resets global variable score,
+     * resets each answer.
+     */
+    public void retakeQuiz(View view) {
+        // Go on top of ScrollView for better user experience.
+        ScrollView scroll_view = (ScrollView) findViewById(R.id.activity_main);
+        scroll_view.setScrollY(0);
+        // Reset global variable score.
+        // Not necessary, but better repeat this action.
+        score = 0;
+        // Q1
+        // Retrieve RadioGroup and reset RadioButtons to unchecked.
+        RadioGroup radioGroupQ1 = (RadioGroup) findViewById(R.id.radio_group_q1);
+        radioGroupQ1.clearCheck();
+        // Q2
+        // Retrieve and reset EditText to hint string value.
+        EditText editTextQ2 = (EditText) findViewById(R.id.edit_text_q2);
+        editTextQ2.setText("");
+        editTextQ2.setHint(R.string.green);
+        // Q3
+        // Retrieve and reset CheckBoxes to unchecked.
+        CheckBox checkBoxN1Q3 = (CheckBox) findViewById(R.id.answer_3_one);
+        CheckBox checkBoxN2Q3 = (CheckBox) findViewById(R.id.answer_3_two);
+        CheckBox checkBoxN3Q3 = (CheckBox) findViewById(R.id.answer_3_three);
+        CheckBox checkBoxN4Q3 = (CheckBox) findViewById(R.id.answer_3_four);
+        checkBoxN1Q3.setChecked(false);
+        checkBoxN2Q3.setChecked(false);
+        checkBoxN3Q3.setChecked(false);
+        checkBoxN4Q3.setChecked(false);
+        // Q4
+        // Retrieve RadioGroup and reset RadioButtons to unchecked.
+        RadioGroup radioGroupQ4 = (RadioGroup) findViewById(R.id.radio_group_q4);
+        radioGroupQ4.clearCheck();
+        // Q5
+        // Retrieve and reset EditText to hint string value.
+        EditText editTextQ5 = (EditText) findViewById(R.id.answer_5);
+        editTextQ5.setText("");
+        editTextQ5.setHint(R.string.from_sicily);
+        // Q6
+        // Retrieve RadioGroup and reset RadioButtons to unchecked.
+        RadioGroup radioGroupQ6 = (RadioGroup) findViewById(R.id.radio_group_q6);
+        radioGroupQ6.clearCheck();
+        // Q7
+        // Retrieve and reset CheckBoxes to unchecked.
+        CheckBox checkBoxN1Q7 = (CheckBox) findViewById(R.id.answer_7_one);
+        CheckBox checkBoxN2Q7 = (CheckBox) findViewById(R.id.answer_7_two);
+        CheckBox checkBoxN3Q7 = (CheckBox) findViewById(R.id.answer_7_three);
+        CheckBox checkBoxN4Q7 = (CheckBox) findViewById(R.id.answer_7_four);
+        checkBoxN1Q7.setChecked(false);
+        checkBoxN2Q7.setChecked(false);
+        checkBoxN3Q7.setChecked(false);
+        checkBoxN4Q7.setChecked(false);
+        // Q8
+        // Retrieve RadioGroup and reset RadioButtons to unchecked.
+        RadioGroup radioGroupQ8 = (RadioGroup) findViewById(R.id.radio_group_q8);
+        radioGroupQ8.clearCheck();
+        // Q9
+        // Retrieve RadioGroup and reset RadioButtons to unchecked.
+        RadioGroup radioGroupQ9 = (RadioGroup) findViewById(R.id.radio_group_q9);
+        radioGroupQ9.clearCheck();
+        // Q10
+        // Retrieve and reset EditText to hint string value.
+        EditText editTextQ10 = (EditText) findViewById(R.id.answer_10);
+        editTextQ10.setText("");
+        editTextQ10.setHint(R.string.ears);
     }
 
     /**

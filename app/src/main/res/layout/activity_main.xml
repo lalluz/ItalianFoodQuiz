@@ -48,7 +48,9 @@
 
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box 1 -->
-                <RadioGroup style="@style/radio_group_horizontal">
+                <RadioGroup
+                    android:id="@+id/radio_group_q1"
+                    style="@style/radio_group_horizontal">
 
                     <RadioButton
                         android:id="@+id/eggs"
@@ -85,7 +87,7 @@
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box 2 -->
                 <EditText
-                    android:id="@+id/answer_2"
+                    android:id="@+id/edit_text_q2"
                     style="@style/answer_edit_text"
                     android:hint="@string/green" />
 
@@ -153,7 +155,9 @@
 
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box -->
-                <RadioGroup style="@style/radio_group_horizontal">
+                <RadioGroup
+                    android:id="@+id/radio_group_q4"
+                    style="@style/radio_group_horizontal">
 
                     <RadioButton
                         android:id="@+id/true_value_q4"
@@ -207,7 +211,9 @@
 
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box -->
-                <RadioGroup style="@style/radio_group_horizontal">
+                <RadioGroup
+                    android:id="@+id/radio_group_q6"
+                    style="@style/radio_group_horizontal">
 
                     <RadioButton
                         style="@style/answer_4and6and8_radio_button"
@@ -296,7 +302,9 @@
                     style="@style/pandoro"
                     android:contentDescription="@string/pandoro" />
 
-                <RadioGroup style="@style/radio_group_horizontal">
+                <RadioGroup
+                    android:id="@+id/radio_group_q8"
+                    style="@style/radio_group_horizontal">
 
                     <RadioButton
                         style="@style/answer_4and6and8_radio_button"
@@ -325,7 +333,9 @@
 
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box 1 -->
-                <RadioGroup style="@style/radio_group_vertical">
+                <RadioGroup
+                    android:id="@+id/radio_group_q9"
+                    style="@style/radio_group_vertical">
 
                     <RadioButton
                         style="@style/answer_9_radio_button"
@@ -378,7 +388,12 @@
         <Button
             android:id="@+id/submit_button"
             style="@style/submit_button"
-            android:onClick="result" />
+            android:onClick="displayScore" />
+
+        <Button
+            android:id="@+id/retake_button"
+            style="@style/retake_button"
+            android:onClick="retakeQuiz" />
         <!-- Footer -->
         <LinearLayout style="@style/footer">
 

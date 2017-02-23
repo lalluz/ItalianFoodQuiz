@@ -67,8 +67,10 @@
     <string name="recipe4">Pasta, Butter, Onion, Tomato Sauce, Salt, Pepper, Sausages, Cheese.</string>
     <!-- Button for results -->
     <string name="submit_button">And your score is&#8230;</string>
+    <!-- Button to retake quiz -->
+    <string name="retake_button">Retake Quiz</string>
     <!-- Button openBrowser -->
-    <string name="open_browser_button">Hope you had fun!\nMore about Italian Food?\nCLICK HERE!</string>
+    <string name="open_browser_button">More about Italian Food?\nCLICK HERE!</string>
     <!-- TOAST MESSAGES-->
     <!-- Toast message if score is 0 -->
     <string name="toast_message_if_0">Nothing?! You got a <xliff:g example="0" id="score">%d</xliff:g>!</string>

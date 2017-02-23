@@ -168,26 +168,31 @@
     </style>
     <!-- Submit Button-->
     <style name="submit_button">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_below">@id/main_vertical_layout</item>
-        <item name="android:layout_marginBottom">20dp</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:padding">16dp</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@color/headerBg</item>
         <item name="android:text">@string/submit_button</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/mainBg</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!-- Retake Button-->
+    <style name="retake_button" parent="submit_button">
+        <item name="android:layout_below">@id/submit_button</item>
+        <item name="android:text">@string/retake_button</item>
+        <item name="android:background">#FFA000</item>
     </style>
     <!-- Footer -->
     <style name="footer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">100dp</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:layout_below">@id/submit_button</item>
+        <item name="android:layout_below">@id/retake_button</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/headerBg</item>
+        <item name="android:background">#FF8F00</item>
         <item name="android:padding">10dp</item>
     </style>
     <!-- OpenBrowser Button-->
@@ -197,8 +202,6 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:text">@string/open_browser_button</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">#004D40</item>
     </style>
 </resources>
