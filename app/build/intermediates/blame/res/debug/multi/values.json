@@ -7762,15 +7762,7 @@
                     "endOffset": 137324
                 },
                 "from": {
-                    "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 9114,
-                        "endLine": 205,
-                        "endColumn": 12,
-                        "endOffset": 9540
-                    }
+                    "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml"
                 }
             },
             {
@@ -7869,9 +7861,30 @@
                     "startLine": 1951,
                     "startColumn": 4,
                     "startOffset": 139029,
-                    "endLine": 1955,
+                    "endLine": 1957,
                     "endColumn": 12,
-                    "endOffset": 139254
+                    "endOffset": 139367
+                },
+                "from": {
+                    "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 406,
+                        "endLine": 16,
+                        "endColumn": 12,
+                        "endOffset": 750
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1958,
+                    "startColumn": 4,
+                    "startOffset": 139372,
+                    "endLine": 1960,
+                    "endColumn": 12,
+                    "endOffset": 139488
                 },
                 "from": {
                     "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml"
@@ -7879,12 +7892,12 @@
             },
             {
                 "to": {
-                    "startLine": 1956,
+                    "startLine": 1961,
                     "startColumn": 4,
-                    "startOffset": 139259,
-                    "endLine": 1958,
+                    "startOffset": 139493,
+                    "endLine": 1967,
                     "endColumn": 12,
-                    "endOffset": 139375
+                    "endOffset": 139834
                 },
                 "from": {
                     "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml"
@@ -7892,25 +7905,12 @@
             },
             {
                 "to": {
-                    "startLine": 1959,
+                    "startLine": 1968,
                     "startColumn": 4,
-                    "startOffset": 139380,
-                    "endLine": 1965,
+                    "startOffset": 139839,
+                    "endLine": 1979,
                     "endColumn": 12,
-                    "endOffset": 139721
-                },
-                "from": {
-                    "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1966,
-                    "startColumn": 4,
-                    "startOffset": 139726,
-                    "endLine": 1977,
-                    "endColumn": 12,
-                    "endOffset": 140373
+                    "endOffset": 140486
                 },
                 "from": {
                     "file": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\values\\styles.xml"

@@ -15,11 +15,88 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
+    // Q1
+    RadioButton radioButtonQ1;
+    RadioGroup radioGroupQ1;
+    // Q2
+    EditText editTextQ2;
+    // Q3
+    CheckBox checkBoxN1Q3;
+    CheckBox checkBoxN2Q3;
+    CheckBox checkBoxN3Q3;
+    CheckBox checkBoxN4Q3;
+    // Q4
+    RadioButton radioButtonQ4;
+    RadioGroup radioGroupQ4;
+    // Q5
+    EditText editTextQ5;
+    // Q6
+    RadioButton radioButtonQ6;
+    RadioGroup radioGroupQ6;
+    // Q7
+    CheckBox checkBoxN1Q7;
+    CheckBox checkBoxN2Q7;
+    CheckBox checkBoxN3Q7;
+    CheckBox checkBoxN4Q7;
+    // Q8
+    RadioButton radioButtonQ8;
+    RadioGroup radioGroupQ8;
+    // Q9
+    RadioButton radioButtonQ9;
+    RadioGroup radioGroupQ9;
+    // Q10
+    EditText editTextQ10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Q1
+        // Retrieve the right answer button.
+        radioButtonQ1 = (RadioButton) findViewById(R.id.cream);
+        // Retrieve the entire radio group to reset.
+        radioGroupQ1 = (RadioGroup) findViewById(R.id.radio_group_q1);
+        // Q2
+        // Retrieve the EditText view.
+        editTextQ2 = (EditText) findViewById(R.id.edit_text_q2);
+        // Q3
+        // Retrieve four checkboxes.
+        checkBoxN1Q3 = (CheckBox) findViewById(R.id.answer_3_one);
+        checkBoxN2Q3 = (CheckBox) findViewById(R.id.answer_3_two);
+        checkBoxN3Q3 = (CheckBox) findViewById(R.id.answer_3_three);
+        checkBoxN4Q3 = (CheckBox) findViewById(R.id.answer_3_four);
+        // Q4
+        // Retrieve the right answer button.
+        radioButtonQ4 = (RadioButton) findViewById(R.id.true_value_q4);
+        // Retrieve the entire radio group to reset.
+        radioGroupQ4 = (RadioGroup) findViewById(R.id.radio_group_q4);
+        // Q5
+        // Retrieve the EditText view.
+        editTextQ5 = (EditText) findViewById(R.id.answer_5);
+        // Q6
+        // Retrieve the right answer button.
+        radioButtonQ6 = (RadioButton) findViewById(R.id.true_value_q6);
+        // Retrieve the entire radio group to reset.
+        radioGroupQ6 = (RadioGroup) findViewById(R.id.radio_group_q6);
+        // Q7
+        // Retrieve four checkboxes.
+        checkBoxN1Q7 = (CheckBox) findViewById(R.id.answer_7_one);
+        checkBoxN2Q7 = (CheckBox) findViewById(R.id.answer_7_two);
+        checkBoxN3Q7 = (CheckBox) findViewById(R.id.answer_7_three);
+        checkBoxN4Q7 = (CheckBox) findViewById(R.id.answer_7_four);
+        // Q8
+        // Retrieve the right answer button.
+        radioButtonQ8 = (RadioButton) findViewById(R.id.true_value_q8);
+        // Retrieve the entire radio group to reset.
+        radioGroupQ8 = (RadioGroup) findViewById(R.id.radio_group_q8);
+        // Q9
+        // Retrieve the right answer button.
+        radioButtonQ9 = (RadioButton) findViewById(R.id.recipe3);
+        // Retrieve the entire radio group to reset.
+        radioGroupQ9 = (RadioGroup) findViewById(R.id.radio_group_q9);
+        // Q10
+        // Retrieve the EditText view.
+        editTextQ10 = (EditText) findViewById(R.id.answer_10);
     }
 
     /**
@@ -51,18 +128,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayScore(View view) {
 
-        // QUESTION 1 Q1
+        // Q1
         // Retrieve status from the right button.
-        RadioButton radioButtonQ1 = (RadioButton) findViewById(R.id.cream);
         boolean rightAnswerQ1 = radioButtonQ1.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (rightAnswerQ1) {
             score += 1;
         }
 
-        // QUESTION 2 Q2
+        // Q2
         // Retrieve the string edited by the user.
-        EditText editTextQ2 = (EditText) findViewById(R.id.edit_text_q2);
         String rightAnswerQ2 = editTextQ2.getText().toString().trim();
         // Log.v("MainActivity", "YOU THINK THE ANSWER IS: " + answer);
 
@@ -73,12 +148,8 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // QUESTION 3 Q3
+        // Q3
         // Retrieve status from all checkboxes (they are all true).
-        CheckBox checkBoxN1Q3 = (CheckBox) findViewById(R.id.answer_3_one);
-        CheckBox checkBoxN2Q3 = (CheckBox) findViewById(R.id.answer_3_two);
-        CheckBox checkBoxN3Q3 = (CheckBox) findViewById(R.id.answer_3_three);
-        CheckBox checkBoxN4Q3 = (CheckBox) findViewById(R.id.answer_3_four);
         boolean answerN1Q3 = checkBoxN1Q3.isChecked();
         boolean answerN2Q3 = checkBoxN2Q3.isChecked();
         boolean answerN3Q3 = checkBoxN3Q3.isChecked();
@@ -89,16 +160,15 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // QUESTION 4 Q4
+        // Q4
         // Retrieve status only from the right button.
-        RadioButton radioButtonQ4 = (RadioButton) findViewById(R.id.true_value_q4);
         boolean trueAnswerQ4 = radioButtonQ4.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ4) {
             score += 1;
         }
 
-        // QUESTION 5 Q5
+        // Q5
         // Retrieve the string edited by the user.
         EditText editTextQ5 = (EditText) findViewById(R.id.answer_5);
         String answerQ5 = editTextQ5.getText().toString().trim();
@@ -110,21 +180,16 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // QUESTION 6 Q6
+        // Q6
         // Retrieve status only from the right button.
-        RadioButton radioButtonQ6 = (RadioButton) findViewById(R.id.true_value_q6);
         boolean trueAnswerQ6 = radioButtonQ6.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ6) {
             score += 1;
         }
 
-        // QUESTION 7 Q7
+        // Q7
         // Retrieve status from all checkboxes (Q1 and Q$ are true).
-        CheckBox checkBoxN1Q7 = (CheckBox) findViewById(R.id.answer_7_one);
-        CheckBox checkBoxN2Q7 = (CheckBox) findViewById(R.id.answer_7_two);
-        CheckBox checkBoxN3Q7 = (CheckBox) findViewById(R.id.answer_7_three);
-        CheckBox checkBoxN4Q7 = (CheckBox) findViewById(R.id.answer_7_four);
         boolean answerN1Q7 = checkBoxN1Q7.isChecked();
         boolean answerN2Q7 = checkBoxN2Q7.isChecked();
         boolean answerN3Q7 = checkBoxN3Q7.isChecked();
@@ -135,25 +200,23 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // QUESTION 8 Q8
+        // Q8
         // Retrieve status only from the right button.
-        RadioButton radioButtonQ8 = (RadioButton) findViewById(R.id.true_value_q8);
         boolean trueAnswerQ8 = radioButtonQ8.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ8) {
             score += 1;
         }
 
-        // QUESTION 9 Q9
+        // Q9
         // Retrieve status from the right button.
-        RadioButton radioButtonQ9 = (RadioButton) findViewById(R.id.recipe3);
         boolean rightAnswerQ9 = radioButtonQ9.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (rightAnswerQ9) {
             score += 1;
         }
 
-        // QUESTION 10 Q10
+        // Q10
         // Retrieve the string edited by the user.
         EditText editTextQ10 = (EditText) findViewById(R.id.answer_10);
         String rightAnswerQ10 = editTextQ10.getText().toString().trim();
@@ -164,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // END
+        // END of Quiz
         // Display a different toast for different values of score.
         String toastMessage = null;
 
@@ -208,58 +271,42 @@ public class MainActivity extends AppCompatActivity {
         // Not necessary, but better repeat this action.
         score = 0;
         // Q1
-        // Retrieve RadioGroup and reset RadioButtons to unchecked.
-        RadioGroup radioGroupQ1 = (RadioGroup) findViewById(R.id.radio_group_q1);
+        // Reset RadioButtons to unchecked.
         radioGroupQ1.clearCheck();
         // Q2
-        // Retrieve and reset EditText to hint string value.
-        EditText editTextQ2 = (EditText) findViewById(R.id.edit_text_q2);
+        // Reset EditText to hint string value.
         editTextQ2.setText("");
         editTextQ2.setHint(R.string.green);
         // Q3
-        // Retrieve and reset CheckBoxes to unchecked.
-        CheckBox checkBoxN1Q3 = (CheckBox) findViewById(R.id.answer_3_one);
-        CheckBox checkBoxN2Q3 = (CheckBox) findViewById(R.id.answer_3_two);
-        CheckBox checkBoxN3Q3 = (CheckBox) findViewById(R.id.answer_3_three);
-        CheckBox checkBoxN4Q3 = (CheckBox) findViewById(R.id.answer_3_four);
+        // Reset CheckBoxes to unchecked.
         checkBoxN1Q3.setChecked(false);
         checkBoxN2Q3.setChecked(false);
         checkBoxN3Q3.setChecked(false);
         checkBoxN4Q3.setChecked(false);
         // Q4
-        // Retrieve RadioGroup and reset RadioButtons to unchecked.
-        RadioGroup radioGroupQ4 = (RadioGroup) findViewById(R.id.radio_group_q4);
+        // Reset all RadioButtons to unchecked.
         radioGroupQ4.clearCheck();
         // Q5
-        // Retrieve and reset EditText to hint string value.
-        EditText editTextQ5 = (EditText) findViewById(R.id.answer_5);
+        // Reset EditText to hint string value.
         editTextQ5.setText("");
         editTextQ5.setHint(R.string.from_sicily);
         // Q6
-        // Retrieve RadioGroup and reset RadioButtons to unchecked.
-        RadioGroup radioGroupQ6 = (RadioGroup) findViewById(R.id.radio_group_q6);
+        // Reset RadioButtons to unchecked.
         radioGroupQ6.clearCheck();
         // Q7
-        // Retrieve and reset CheckBoxes to unchecked.
-        CheckBox checkBoxN1Q7 = (CheckBox) findViewById(R.id.answer_7_one);
-        CheckBox checkBoxN2Q7 = (CheckBox) findViewById(R.id.answer_7_two);
-        CheckBox checkBoxN3Q7 = (CheckBox) findViewById(R.id.answer_7_three);
-        CheckBox checkBoxN4Q7 = (CheckBox) findViewById(R.id.answer_7_four);
+        // Reset CheckBoxes to unchecked.
         checkBoxN1Q7.setChecked(false);
         checkBoxN2Q7.setChecked(false);
         checkBoxN3Q7.setChecked(false);
         checkBoxN4Q7.setChecked(false);
         // Q8
-        // Retrieve RadioGroup and reset RadioButtons to unchecked.
-        RadioGroup radioGroupQ8 = (RadioGroup) findViewById(R.id.radio_group_q8);
+        // Reset RadioButtons to unchecked.
         radioGroupQ8.clearCheck();
         // Q9
-        // Retrieve RadioGroup and reset RadioButtons to unchecked.
-        RadioGroup radioGroupQ9 = (RadioGroup) findViewById(R.id.radio_group_q9);
+        // Reset RadioButtons to unchecked.
         radioGroupQ9.clearCheck();
         // Q10
-        // Retrieve and reset EditText to hint string value.
-        EditText editTextQ10 = (EditText) findViewById(R.id.answer_10);
+        // Reset EditText to hint string value.
         editTextQ10.setText("");
         editTextQ10.setHint(R.string.ears);
     }
