@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="19"
-    density="xhdpi"
+    api-level="16"
+    density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1444764372564066"
+    timestamp="1445392547521434"
     token="-390918371253969418"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="281" />
+        duration="2610" />
     <task
         name="instant-run-dex"
-        duration="50" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="90" />
+        duration="1454" />
     <task
         name="verifier"
-        duration="4" />
+        duration="109" />
 
     <artifact
-        location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="1444657812055721"
+        timestamp="1445392547521434"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="1444764372564066"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
