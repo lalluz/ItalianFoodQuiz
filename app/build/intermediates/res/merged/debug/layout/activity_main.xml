@@ -44,7 +44,7 @@
                     <!-- question  -->
                     <TextView
                         style="@style/question_box"
-                        android:text="@string/question_1" />
+                        android:text="@string/long_text" />
 
                 </LinearLayout> <!-- closing horizontal layout number+question -->
                 <!-- answer box 1 -->

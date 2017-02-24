@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="16"
-    density="mdpi"
+    api-level="19"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1445392547521434"
+    timestamp="1531219375174079"
     token="-390918371253969418"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2610" />
+        duration="639" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1454" />
+        duration="87" />
     <task
         name="verifier"
-        duration="109" />
+        duration="41" />
 
     <artifact
         location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1445392547521434"
+        timestamp="1531219375174079"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"

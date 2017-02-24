@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7d403db43951870b328d0fdf4f81c4c04eb6c37c">
+        sha1="7adb21bfcb911e51e7a2c34108c2ba7545321bb3">
         <dex dex="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\intermediates\pre-dexed\debug\instant-run_288ca0f8d8c6b2ef1150425baca843b81b340c27.jar" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="35e34e1f588e1fc95face4920c97b69bc744dd1a">
+        sha1="75cb82054ffe7759ac6e26daaa82357ad514954c">
         <dex dex="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_df203f79dadfe1d78f31fc0532714faa089c70e9.jar" />
     </item>
 

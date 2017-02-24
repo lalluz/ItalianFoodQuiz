@@ -85,5 +85,7 @@
     <string name="toast_message_if_8or9">Good! You got <xliff:g example="8-9" id="score">%d</xliff:g> answers right!</string>
     <!-- Toast message if score is 10 -->
     <string name="toast_message_if_10">Great! You got all <xliff:g example="10" id="score">%d</xliff:g> answers right!</string>
+    <!-- Long string to test space in questions -->
+    <string name="long_text">Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.</string>
 
 </resources>
