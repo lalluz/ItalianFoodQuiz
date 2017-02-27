@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pandoro.png",
         "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\src\\main\\res\\drawable\\pandoro.png"
+    },
+    {
+        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",

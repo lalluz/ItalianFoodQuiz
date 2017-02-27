@@ -5,29 +5,29 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1531219375174079"
+    timestamp="1761168244558918"
     token="-390918371253969418"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="639" />
+        duration="397" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="87" />
+        duration="58" />
     <task
         name="verifier"
-        duration="41" />
+        duration="16" />
 
     <artifact
         location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1531219375174079"
+        timestamp="1761168244558918"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Lara\AndroidStudioProjects\ItalianFoodQuiz\app\build\outputs\apk\app-debug.apk"

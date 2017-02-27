@@ -309,7 +309,7 @@ public class MainActivity extends AppCompatActivity {
         editTextQ10.setHint(R.string.ears);
         // Go on top of ScrollView for better user experience.
         ScrollView scroll_view = (ScrollView) findViewById(R.id.activity_main);
-        scroll_view.setScrollY(0);
+        scroll_view.fullScroll(ScrollView.FOCUS_UP);
         // Prevent focus on any of EditText.
         editTextQ2.clearFocus();
         editTextQ5.clearFocus();
