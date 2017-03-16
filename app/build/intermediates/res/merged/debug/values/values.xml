@@ -120,7 +120,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorAccent">#FFD180</color>
+    <color name="colorAccent">#FFD740</color>
     <color name="colorPrimary">#FF9800</color>
     <color name="colorPrimaryDark">#F57C00</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
@@ -718,7 +718,6 @@
     <string name="intro_1">How much do you really know about authentic Italian Food?</string>
     <string name="intro_2">Find it out and enjoy this Quiz!</string>
     <string name="ketchup" translatable="false">Ketchup</string>
-    <string name="long_text">Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.</string>
     <string name="open_browser_button">More about Italian Food?\nCLICK HERE!</string>
     <string name="orecchiette" translatable="false">Orecchiette</string>
     <string name="pandoro" translatable="false">Pandoro</string>
@@ -749,15 +748,15 @@
     <string name="retake_button">Retake Quiz</string>
     <string name="ribollita" translatable="false">Ribollita</string>
     <string name="search_menu_title">Search</string>
+    <string name="snackbar_message_if_0">Nothing?! You got a <ns1:g example="0" id="score">%d</ns1:g>!</string>
+    <string name="snackbar_message_if_1">:-( You got only <ns1:g example="1" id="score">%d</ns1:g>!</string>
+    <string name="snackbar_message_if_10">Great! You got all <ns1:g example="10" id="score">%d</ns1:g>!</string>
+    <string name="snackbar_message_if_2to4">Sorry, you got only <ns1:g example="2-3-4" id="score">%d</ns1:g>!</string>
+    <string name="snackbar_message_if_5to7">Not bad! You got <ns1:g example="5-6-7" id="score">%d</ns1:g>!</string>
+    <string name="snackbar_message_if_8or9">Good! You got <ns1:g example="8-9" id="score">%d</ns1:g>!</string>
     <string name="spaghetti" translatable="false">Spaghetti</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="submit_button">And your score is…</string>
-    <string name="toast_message_if_0">Nothing?! You got a <ns1:g example="0" id="score">%d</ns1:g>!</string>
-    <string name="toast_message_if_1">:-( You got only <ns1:g example="1" id="score">%d</ns1:g> answer right!</string>
-    <string name="toast_message_if_10">Great! You got all <ns1:g example="10" id="score">%d</ns1:g> answers right!</string>
-    <string name="toast_message_if_2to4">Sorry, you got only <ns1:g example="2-3-4" id="score">%d</ns1:g> answers right!</string>
-    <string name="toast_message_if_5to7">Not bad! You got <ns1:g example="5-6-7" id="score">%d</ns1:g> answers right!</string>
-    <string name="toast_message_if_8or9">Good! You got <ns1:g example="8-9" id="score">%d</ns1:g> answers right!</string>
     <string name="tortellini" translatable="false">Tortellini</string>
     <string name="true_value">True</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -2319,7 +2318,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/main_margin</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textSize">@dimen/intro_text</item>
         <item name="android:textStyle">bold</item>
@@ -2376,10 +2375,11 @@
         <item name="android:background">@color/main_bg</item>
     </style>
     <style name="open_browser_button" parent="button">
-        <item name="android:textSize">@dimen/question_text</item>
+        <item name="android:textSize">@dimen/intro_text</item>
         <item name="android:layout_marginBottom">20dp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#757575</item>
     </style>
     <style name="q1_radio_buttons">
         <item name="android:layout_width">0dp</item>
@@ -2426,7 +2426,7 @@
         <item name="android:text">@string/app_name</item>
         <item name="android:textSize">@dimen/title_text</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>

@@ -232,36 +232,37 @@ public class MainActivity extends AppCompatActivity {
         // END of Quiz
         // Display a different snackbar for different values of score.
         LinearLayout parentView = (LinearLayout) findViewById(R.id.main_linear_layout);
-        String toastMessage = null;
+        String snackbarMessage = null;
         String retake = getString(R.string.retake_button);
 
         if (score == 0) {
-            toastMessage = getString(R.string.toast_message_if_0, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_0, score);
         }
         if (score == 1) {
-            toastMessage = getString(R.string.toast_message_if_1, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_1, score);
         }
         if (score == 2 || score == 3 || score == 4) {
-            toastMessage = getString(R.string.toast_message_if_2to4, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_2to4, score);
         }
         if (score == 5 || score == 6 || score == 7) {
-            toastMessage = getString(R.string.toast_message_if_5to7, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_5to7, score);
         }
         if (score == 8 || score == 9) {
-            toastMessage = getString(R.string.toast_message_if_8or9, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_8or9, score);
         }
         if (score == 10) {
-            toastMessage = getString(R.string.toast_message_if_10, score);
+            snackbarMessage = getString(R.string.snackbar_message_if_10, score);
         }
 
         Snackbar snackbar = Snackbar
-                .make(parentView, toastMessage, Snackbar.LENGTH_INDEFINITE)
+                .make(parentView, snackbarMessage, Snackbar.LENGTH_LONG)
                 .setAction(retake, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         retakeQuiz(view);
                     }
                 });
+        snackbar.setDuration(20000);
         snackbar.show();
 
         // Reset global variable score.

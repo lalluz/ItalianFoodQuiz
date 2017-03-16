@@ -62,20 +62,18 @@
     <string name="retake_button">Retake Quiz</string>
     <!-- Button openBrowser -->
     <string name="open_browser_button">More about Italian Food?\nCLICK HERE!</string>
-    <!-- TOAST MESSAGES-->
-    <!-- Toast message if score is 0 -->
-    <string name="toast_message_if_0">Nothing?! You got a <xliff:g example="0" id="score">%d</xliff:g>!</string>
-    <!-- Toast message if score is 1 -->
-    <string name="toast_message_if_1">:-( You got only <xliff:g example="1" id="score">%d</xliff:g> answer right!</string>
-    <!-- Toast message if score is 2 or 3 or 4 -->
-    <string name="toast_message_if_2to4">Sorry, you got only <xliff:g example="2-3-4" id="score">%d</xliff:g> answers right!</string>
-    <!-- Toast message if score is 5 or 6 or 7 -->
-    <string name="toast_message_if_5to7">Not bad! You got <xliff:g example="5-6-7" id="score">%d</xliff:g> answers right!</string>
-    <!-- Toast message if score is 8 or 9 -->
-    <string name="toast_message_if_8or9">Good! You got <xliff:g example="8-9" id="score">%d</xliff:g> answers right!</string>
-    <!-- Toast message if score is 10 -->
-    <string name="toast_message_if_10">Great! You got all <xliff:g example="10" id="score">%d</xliff:g> answers right!</string>
-    <!-- Long string to test space in questions -->
-    <string name="long_text">Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.Pasta, Chili Pepper, Tomato Sauce, Bacon, Garlic, Cream, Salt.</string>
+    <!-- SNACKBAR MESSAGES-->
+    <!-- Snackbar message if score is 0 -->
+    <string name="snackbar_message_if_0">Nothing?! You got a <xliff:g example="0" id="score">%d</xliff:g>!</string>
+    <!-- Snackbar message if score is 1 -->
+    <string name="snackbar_message_if_1">:-( You got only <xliff:g example="1" id="score">%d</xliff:g>!</string>
+    <!-- Snackbar message if score is 2 or 3 or 4 -->
+    <string name="snackbar_message_if_2to4">Sorry, you got only <xliff:g example="2-3-4" id="score">%d</xliff:g>!</string>
+    <!-- Snackbar message if score is 5 or 6 or 7 -->
+    <string name="snackbar_message_if_5to7">Not bad! You got <xliff:g example="5-6-7" id="score">%d</xliff:g>!</string>
+    <!-- Snackbar message if score is 8 or 9 -->
+    <string name="snackbar_message_if_8or9">Good! You got <xliff:g example="8-9" id="score">%d</xliff:g>!</string>
+    <!-- Snackbar message if score is 10 -->
+    <string name="snackbar_message_if_10">Great! You got all <xliff:g example="10" id="score">%d</xliff:g>!</string>
 
 </resources>
