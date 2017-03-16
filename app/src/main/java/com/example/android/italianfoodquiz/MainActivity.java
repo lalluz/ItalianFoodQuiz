@@ -3,14 +3,15 @@ package com.example.android.italianfoodquiz;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -229,8 +230,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // END of Quiz
-        // Display a different toast for different values of score.
+        // Display a different snackbar for different values of score.
+        LinearLayout parentView = (LinearLayout) findViewById(R.id.main_linear_layout);
         String toastMessage = null;
+        String retake = getString(R.string.retake_button);
 
         if (score == 0) {
             toastMessage = getString(R.string.toast_message_if_0, score);
@@ -251,7 +254,15 @@ public class MainActivity extends AppCompatActivity {
             toastMessage = getString(R.string.toast_message_if_10, score);
         }
 
-        Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
+        Snackbar snackbar = Snackbar
+                .make(parentView, toastMessage, Snackbar.LENGTH_INDEFINITE)
+                .setAction(retake, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        retakeQuiz(view);
+                    }
+                });
+        snackbar.show();
 
         // Reset global variable score.
         score = 0;

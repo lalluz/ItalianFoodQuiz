@@ -2,159 +2,138 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    style="@style/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context="com.example.android.italianfoodquiz.MainActivity">
-
-    <RelativeLayout style="@style/main_relative_layout">
-        <!-- spaghetti image -->
+    <!-- Main layout -->
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        style="@style/main_linear_layout">
+        <!-- Header image -->
         <ImageView
-            android:id="@+id/spaghetti_image"
             style="@style/spaghetti_image"
             android:contentDescription="@string/spaghetti" />
-        <!-- App Header -->
-        <LinearLayout
-            android:id="@+id/header"
-            style="@style/header">
-            <!-- presentation -->
-            <TextView
-                style="@style/presentation"
-                android:text="@string/intro_1" />
-            <!-- Horizontal line -->
-            <View style="@style/horizontal_line" />
-            <!-- line of text -->
-            <TextView
-                style="@style/intro_2"
-                android:text="@string/intro_2" />
-
-        </LinearLayout>
-        <!-- Quiz Body -->
-        <LinearLayout
-            android:id="@+id/main_vertical_layout"
-            style="@style/box_layout"
-            android:layout_below="@+id/header">
-
-            <!-- box 1 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/one" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_1" />
-
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 1 -->
+        <!-- Title -->
+        <TextView style="@style/title" />
+        <!-- Intro 1 -->
+        <TextView
+            style="@style/intro_1"
+            android:text="@string/intro_1" />
+        <!-- Intro 2 -->
+        <TextView
+            style="@style/intro_2"
+            android:text="@string/intro_2" />
+        <!-- Card 1 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 1 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_1" />
+                <!-- Horizontal line -->
+                <View style="@style/horizontal_line" />
+                <!-- Answer 1, four horizontal radiobuttons -->
                 <RadioGroup
                     android:id="@+id/radio_group_q1"
                     style="@style/radio_group_horizontal">
 
                     <RadioButton
                         android:id="@+id/eggs"
-                        style="@style/answer_1_radio_button"
+                        style="@style/q1_radio_buttons"
                         android:text="@string/eggs" />
 
                     <RadioButton
                         android:id="@+id/cream"
-                        style="@style/answer_1_radio_button"
+                        style="@style/q1_radio_buttons"
                         android:text="@string/cream" />
 
                     <RadioButton
                         android:id="@+id/pepper"
-                        style="@style/answer_1_radio_button"
+                        style="@style/q1_radio_buttons"
                         android:text="@string/pepper" />
 
                 </RadioGroup>
 
-            </LinearLayout> <!-- end box 1 -->
+            </LinearLayout> <!-- End card layout 1 -->
 
-            <!-- box 2 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/two" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_2" />
+        </android.support.v7.widget.CardView> <!-- End card 1 -->
+        <!-- Card 2 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 2 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_2" />
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 2 -->
+                <ImageView
+                    style="@style/images"
+                    android:contentDescription="@string/basil"
+                    android:src="@drawable/pesto" />
+                <!-- Answer 2, edittext-->
                 <EditText
                     android:id="@+id/edit_text_q2"
-                    style="@style/answer_edit_text"
+                    style="@style/edit_text"
                     android:hint="@string/green" />
 
-            </LinearLayout> <!-- end box 2 -->
-            <!-- box 3 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- first half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/three" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_3" />
+            </LinearLayout> <!-- End card layout 2 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 3 -->
-                <LinearLayout style="@style/answer_box">
+        </android.support.v7.widget.CardView> <!-- End card 2 -->
+        <!-- Card 3 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 3 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_3" />
+                <!-- Horizontal line -->
+                <View style="@style/horizontal_line" />
+                <!-- Answer 3, four checkboxes -->
+                <!-- First horizontal checkboxes row -->
+                <LinearLayout style="@style/answer_3and7">
 
-                    <LinearLayout style="@style/answer_3and7">
+                    <CheckBox
+                        android:id="@+id/answer_3_one"
+                        style="@style/answer_3and7_upper_checkboxes"
+                        android:text="@string/bolognese_sauce" />
 
-                        <CheckBox
-                            android:id="@+id/answer_3_one"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/bolognese_sauce" />
+                    <CheckBox
+                        android:id="@+id/answer_3_two"
+                        style="@style/answer_3and7_upper_checkboxes"
+                        android:text="@string/pineapple" />
 
-                        <CheckBox
-                            android:id="@+id/answer_3_two"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/pineapple" />
+                </LinearLayout> <!-- End first horizontal checkboxes row -->
+                <!-- Second horizontal checkboxes row -->
+                <LinearLayout style="@style/answer_3and7">
 
-                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/answer_3_three"
+                        style="@style/answer_3and7_checkboxes"
+                        android:text="@string/chicken" />
 
-                    <LinearLayout style="@style/answer_3and7">
+                    <CheckBox
+                        android:id="@+id/answer_3_four"
+                        style="@style/answer_3and7_checkboxes"
+                        android:text="@string/ketchup" />
 
-                        <CheckBox
-                            android:id="@+id/answer_3_three"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/chicken" />
+                </LinearLayout> <!-- End second horizontal checkboxes lrow -->
 
-                        <CheckBox
-                            android:id="@+id/answer_3_four"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/ketchup" />
+            </LinearLayout> <!-- End card layout 3 -->
 
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout> <!-- end box 3 -->
-            <!-- box 4 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/four" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_4" />
-
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box -->
+        </android.support.v7.widget.CardView> <!-- End card 3 -->
+        <!-- Card 4 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 4 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_4" />
+                <!-- Horizontal line -->
+                <View style="@style/horizontal_line" />
+                <!-- Answer 4, two radiobuttons-->
                 <RadioGroup
                     android:id="@+id/radio_group_q4"
                     style="@style/radio_group_horizontal">
@@ -170,47 +149,45 @@
 
                 </RadioGroup>
 
-            </LinearLayout> <!-- end box 4 -->
-            <!-- box 5 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/five" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_5" />
+            </LinearLayout> <!-- End card layout 4 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 2 -->
+        </android.support.v7.widget.CardView> <!-- End card 4 -->
+        <!-- Card 5 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 5 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_5" />
+
                 <ImageView
-                    style="@style/sicilan_cannoli"
-                    android:contentDescription="@string/cannoli" />
-
+                    style="@style/images"
+                    android:contentDescription="@string/cannoli"
+                    android:src="@drawable/cannoli" />
+                <!-- Answer 5, edittext -->
                 <EditText
                     android:id="@+id/answer_5"
-                    style="@style/answer_edit_text"
+                    style="@style/edit_text"
                     android:hint="@string/from_sicily" />
 
-            </LinearLayout> <!-- end box 5 -->
-            <!-- box 6 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/six" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_6" />
+            </LinearLayout> <!-- End card layout 5 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box -->
+        </android.support.v7.widget.CardView> <!-- End card 5 -->
+        <!-- Card 6 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 6 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_6" />
+
+                <ImageView
+                    style="@style/images"
+                    android:contentDescription="@string/pizza"
+                    android:src="@drawable/pizza" />
+                <!-- Answer 6, four horizontal radiobuttons -->
                 <RadioGroup
                     android:id="@+id/radio_group_q6"
                     style="@style/radio_group_horizontal">
@@ -234,105 +211,95 @@
 
                 </RadioGroup>
 
-            </LinearLayout> <!-- end box 6 -->
-            <!-- box 7 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- first half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/seven" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_7" />
+            </LinearLayout> <!-- End card layout 6 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 7 -->
-                <LinearLayout style="@style/answer_box">
+        </android.support.v7.widget.CardView> <!-- End card 6 -->
+        <!-- Card 7 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 7 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_7" />
+                <!-- Horizontal line -->
+                <View style="@style/horizontal_line" />
+                <!-- Answer 7, four checkboxes in two horizontal rows -->
+                <!-- First row, two checkboxes -->
+                <LinearLayout style="@style/answer_3and7">
 
-                    <LinearLayout style="@style/answer_3and7">
+                    <CheckBox
+                        android:id="@+id/answer_7_one"
+                        style="@style/answer_3and7_upper_checkboxes"
+                        android:text="@string/ribollita" />
 
-                        <CheckBox
-                            android:id="@+id/answer_7_one"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/ribollita" />
+                    <CheckBox
+                        android:id="@+id/answer_7_two"
+                        style="@style/answer_3and7_upper_checkboxes"
+                        android:text="@string/tortellini" />
 
-                        <CheckBox
-                            android:id="@+id/answer_7_two"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/tortellini" />
+                </LinearLayout> <!-- End first checkboxes row -->
+                <!-- Second row, two checkboxes -->
+                <LinearLayout style="@style/answer_3and7">
 
-                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/answer_7_three"
+                        style="@style/answer_3and7_checkboxes"
+                        android:text="@string/amatriciana" />
 
-                    <LinearLayout style="@style/answer_3and7">
+                    <CheckBox
+                        android:id="@+id/answer_7_four"
+                        style="@style/answer_3and7_checkboxes"
+                        android:text="@string/panzanella" />
 
-                        <CheckBox
-                            android:id="@+id/answer_7_three"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/amatriciana" />
+                </LinearLayout> <!-- End second checkboxes row -->
 
-                        <CheckBox
-                            android:id="@+id/answer_7_four"
-                            style="@style/answer_3and7_checkboxes"
-                            android:text="@string/panzanella" />
+            </LinearLayout> <!-- End card layout 7 -->
 
-                    </LinearLayout>
+        </android.support.v7.widget.CardView> <!-- End card 7 -->
+        <!-- Card 8 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 8 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_8" />
 
-                </LinearLayout>
-
-            </LinearLayout> <!-- end box 7 -->
-            <!-- box 8 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/eight" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_8" />
-
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 8 -->
                 <ImageView
-                    style="@style/pandoro"
-                    android:contentDescription="@string/pandoro" />
-
+                    style="@style/images"
+                    android:contentDescription="@string/pandoro"
+                    android:src="@drawable/pandoro" />
+                <!-- Answer 8,  two horizontal radiobuttons-->
                 <RadioGroup
                     android:id="@+id/radio_group_q8"
                     style="@style/radio_group_horizontal">
-
-                    <RadioButton
-                        style="@style/answer_4and6and8_radio_button"
-                        android:text="@string/panettone" />
 
                     <RadioButton
                         android:id="@+id/true_value_q8"
                         style="@style/answer_4and6and8_radio_button"
                         android:text="@string/pandoro" />
 
+                    <RadioButton
+                        style="@style/answer_4and6and8_radio_button"
+                        android:text="@string/panettone" />
+
                 </RadioGroup>
 
-            </LinearLayout> <!-- end box 8 -->
-            <!-- box 9 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/nine" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_9" />
+            </LinearLayout> <!-- End card layout 8 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 1 -->
+        </android.support.v7.widget.CardView> <!-- End card 8 -->
+        <!-- Card 9 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 9 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_9" />
+
+                <View style="@style/horizontal_line" />
+                <!-- Answer 9, four vertical radiobuttons -->
                 <RadioGroup
                     android:id="@+id/radio_group_q9"
                     style="@style/radio_group_vertical">
@@ -356,53 +323,47 @@
 
                 </RadioGroup>
 
-            </LinearLayout> <!-- end box 9 -->
-            <!-- box 10 -->
-            <LinearLayout style="@style/box_layout">
-                <!-- upper half of the box -->
-                <LinearLayout style="@style/layout_number_question">
-                    <!-- question number -->
-                    <TextView
-                        style="@style/number_box"
-                        android:text="@string/ten" />
-                    <!-- question  -->
-                    <TextView
-                        style="@style/question_box"
-                        android:text="@string/question_10" />
+            </LinearLayout> <!-- End card layout 9 -->
 
-                </LinearLayout> <!-- closing horizontal layout number+question -->
-                <!-- answer box 2 -->
+        </android.support.v7.widget.CardView> <!-- End card 9 -->
+        <!-- Card 10 -->
+        <android.support.v7.widget.CardView style="@style/card">
+            <!-- Card layout -->
+            <LinearLayout style="@style/card_linear_layout">
+                <!-- Question 10 -->
+                <TextView
+                    style="@style/question"
+                    android:text="@string/question_10" />
+
                 <ImageView
-                    style="@style/orecchiette"
-                    android:contentDescription="@string/orecchiette" />
-
+                    style="@style/images"
+                    android:contentDescription="@string/orecchiette"
+                    android:src="@drawable/orecchiette" />
+                <!-- Answer 10, edittext -->
                 <EditText
                     android:id="@+id/answer_10"
-                    style="@style/answer_edit_text"
+                    style="@style/edit_text"
                     android:hint="@string/ears" />
 
-            </LinearLayout> <!-- end box 10 -->
+            </LinearLayout> <!-- End card layout 10 -->
 
-        </LinearLayout> <!-- end main vertical layout -->
+        </android.support.v7.widget.CardView> <!-- End card 10 -->
         <!-- Submit button -->
         <Button
             android:id="@+id/submit_button"
-            style="@style/submit_button"
-            android:onClick="displayScore" />
-        <!-- Reset button -->
+            style="@style/button"
+            android:onClick="displayScore"
+            android:text="@string/submit_button" />
+        <!-- Open browser button -->
         <Button
-            android:id="@+id/retake_button"
-            style="@style/retake_button"
-            android:onClick="retakeQuiz" />
-        <!-- Footer -->
-        <LinearLayout style="@style/footer">
+            style="@style/open_browser_button"
+            android:onClick="openBrowser"
+            android:text="@string/open_browser_button" />
+        <!-- Footer image -->
+        <ImageView
+            style="@style/spaghetti_image"
+            android:contentDescription="@string/spaghetti" />
 
-            <Button
-                style="@style/open_browser_button"
-                android:onClick="openBrowser" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
+    </LinearLayout> <!-- End main layout -->
 
 </ScrollView>

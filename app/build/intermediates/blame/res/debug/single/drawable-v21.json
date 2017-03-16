@@ -1,18 +1,34 @@
 [
     {
+        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\208c95eb7439f14efeffefecfc6120a05346cb92\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\b57e63b60ff8f6d438bfc346c887268e8014eea1\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\208c95eb7439f14efeffefecfc6120a05346cb92\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\208c95eb7439f14efeffefecfc6120a05346cb92\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\b57e63b60ff8f6d438bfc346c887268e8014eea1\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\208c95eb7439f14efeffefecfc6120a05346cb92\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\b57e63b60ff8f6d438bfc346c887268e8014eea1\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
         "merged": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\Lara\\AndroidStudioProjects\\ItalianFoodQuiz\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "C:\\Users\\Lara\\.android\\build-cache\\b57e63b60ff8f6d438bfc346c887268e8014eea1\\output\\res\\drawable-v21\\notification_action_background.xml"
     }
 ]

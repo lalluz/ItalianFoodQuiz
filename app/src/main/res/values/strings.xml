@@ -8,24 +8,13 @@
     <!-- True and False -->
     <string name="true_value">True</string>
     <string name="false_value">False</string>
-    <!-- Numbers for boxes-->
-    <string name="one" translatable="false">1</string>
-    <string name="two" translatable="false">2</string>
-    <string name="three" translatable="false">3</string>
-    <string name="four" translatable="false">4</string>
-    <string name="five" translatable="false">5</string>
-    <string name="six" translatable="false">6</string>
-    <string name="seven" translatable="false">7</string>
-    <string name="eight" translatable="false">8</string>
-    <string name="nine" translatable="false">9</string>
-    <string name="ten" translatable="false">10</string>
     <!-- Questions -->
     <string name="question_1">Which of these ingredients is not in Pasta Carbonara?</string>
     <string name="question_2">What is the Italian word for the main ingredient of Pesto Genovese?</string>
     <string name="question_3">Which ingredients an Italian will never put on a Pizza?</string>
     <string name="question_4">In Italy Fettuccine Alfredo doesn\'t exist.</string>
     <string name="question_5">What is the name of this delicious dessert?</string>
-    <string name="question_6">When Pizza Margherita was created in Naples?</string>
+    <string name="question_6">When was Pizza Margherita created in Naples?</string>
     <string name="question_7">Which of these famous dishes are from Tuscany?</string>
     <string name="question_8">What is the name of this wonderful Christmas cake from Verona?</string>
     <string name="question_9">Which of these lists of ingredients is the right one for Pasta Amatriciana?</string>
@@ -38,6 +27,7 @@
     <!-- Answer 10 Hint -->
     <string name="ears">It\'s like little ears&#8230;</string>
     <!-- Ingredients and Food names-->
+    <string name="pizza" translatable="false">Pizza</string>
     <string name="spaghetti" translatable="false">Spaghetti</string>
     <string name="basil" translatable="false">Basilico</string>
     <string name="eggs">Eggs</string>
