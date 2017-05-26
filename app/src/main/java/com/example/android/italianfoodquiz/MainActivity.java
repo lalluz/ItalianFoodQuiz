@@ -351,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(browserIntent);
         } else {
             Toast toast = Toast
-                    .makeText(getApplicationContext(), "Sorry, this link can't be open now.", Toast.LENGTH_SHORT);
+                    .makeText(getApplicationContext(), "Sorry, this link can't be opened now.", Toast.LENGTH_SHORT);
             toast.show();
         }
     }
