@@ -235,25 +235,33 @@ public class MainActivity extends AppCompatActivity {
         String snackbarMessage = null;
         String retake = getString(R.string.retake_button);
 
-        if (score == 0) {
-            snackbarMessage = getString(R.string.snackbar_message_if_0, score);
-        }
-        if (score == 1) {
-            snackbarMessage = getString(R.string.snackbar_message_if_1, score);
-        }
-        if (score == 2 || score == 3 || score == 4) {
-            snackbarMessage = getString(R.string.snackbar_message_if_2to4, score);
-        }
-        if (score == 5 || score == 6 || score == 7) {
-            snackbarMessage = getString(R.string.snackbar_message_if_5to7, score);
-        }
-        if (score == 8 || score == 9) {
-            snackbarMessage = getString(R.string.snackbar_message_if_8or9, score);
-        }
-        if (score == 10) {
-            snackbarMessage = getString(R.string.snackbar_message_if_10, score);
+        switch (score) {
+            case 0:
+                snackbarMessage = getString(R.string.snackbar_message_if_0, score);
+                break;
+            case 1:
+                snackbarMessage = getString(R.string.snackbar_message_if_0, score);
+                break;
+            case 2:
+            case 3:
+            case 4:
+                snackbarMessage = getString(R.string.snackbar_message_if_2to4, score);
+                break;
+            case 5:
+            case 6:
+            case 7:
+                snackbarMessage = getString(R.string.snackbar_message_if_5to7, score);
+                break;
+            case 8:
+            case 9:
+                snackbarMessage = getString(R.string.snackbar_message_if_8or9, score);
+                break;
+            case 10:
+                snackbarMessage = getString(R.string.snackbar_message_if_10, score);
+                break;
         }
 
+        // Set a snackbar whit a message about the score
         Snackbar snackbar = Snackbar
                 .make(parentView, snackbarMessage, Snackbar.LENGTH_LONG)
                 .setAction(retake, new View.OnClickListener() {
@@ -342,5 +350,4 @@ public class MainActivity extends AppCompatActivity {
             startActivity(browserIntent);
         }
     }
-
-} // end MainActivity
+}
