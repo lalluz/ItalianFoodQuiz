@@ -12,10 +12,11 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0;
+    int score;
     // Q1
     RadioButton radioButtonQ1;
     RadioGroup radioGroupQ1;
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         boolean rightAnswerQ1 = radioButtonQ1.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (rightAnswerQ1) {
-            score += 1;
+            score++;
         }
 
         // Q2
@@ -158,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check if all answers are true and add 1 point to score.
         if (answerN1Q3 && answerN2Q3 && answerN3Q3 && answerN4Q3) {
-            score += 1;
+            score++;
         }
 
         // Q4
@@ -166,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         boolean trueAnswerQ4 = radioButtonQ4.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ4) {
-            score += 1;
+            score++;
         }
 
         // Q5
@@ -179,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         String cannoli = getString(R.string.cannoli);
         String cannoliIt = getString(R.string.cannoli_it);
         if (answerQ5.equalsIgnoreCase(cannoli) || answerQ5.equalsIgnoreCase(cannoliIt)) {
-            score += 1;
+            score++;
         }
 
         // Q6
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
         boolean trueAnswerQ6 = radioButtonQ6.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ6) {
-            score += 1;
+            score++;
         }
 
         // Q7
@@ -199,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check if Q1 and Q4 are true and add 1 point to score.
         if ((answerN1Q7 && answerN4Q7) && (!answerN2Q7 && !answerN3Q7)) {
-            score += 1;
+            score++;
         }
 
         // Q8
@@ -207,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
         boolean trueAnswerQ8 = radioButtonQ8.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (trueAnswerQ8) {
-            score += 1;
+            score++;
         }
 
         // Q9
@@ -215,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
         boolean rightAnswerQ9 = radioButtonQ9.isChecked();
         // Check if the checked button is correct and add 1 point to score.
         if (rightAnswerQ9) {
-            score += 1;
+            score++;
         }
 
         // Q10
@@ -226,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
         // Check if the answer is correct and add 1 point to score.
         String orecchiette = getString(R.string.orecchiette);
         if (rightAnswerQ10.equalsIgnoreCase(orecchiette)) {
-            score += 1;
+            score++;
         }
 
         // END of Quiz
@@ -348,6 +349,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (browserIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(browserIntent);
+        } else {
+            Toast toast = Toast
+                    .makeText(getApplicationContext(), "Sorry, this link can't be open now.", Toast.LENGTH_SHORT);
+            toast.show();
         }
     }
 }
